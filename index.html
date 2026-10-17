@@ -59,7 +59,7 @@
                 const response = await fetch('https://adsgd.app.n8n.cloud/webhook/handbook-chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ chatInput: message })
+                    body: JSON.stringify({ question: message })
                 });
 
                 const data = await response.json();
