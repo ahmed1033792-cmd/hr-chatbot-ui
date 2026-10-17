@@ -56,8 +56,7 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
 
             try {
-                // UPDATE THIS URL to your n8n Production Webhook URL if needed
-                const response = await fetch('YOUR_N8N_PRODUCTION_WEBHOOK_URL', {
+                const response = await fetch('https://adsgd.app.n8n.cloud/webhook/handbook-chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ chatInput: message })
